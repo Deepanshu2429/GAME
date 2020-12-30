@@ -1,0 +1,16 @@
+def Potion_Game():
+ b = int(input("which type of difficulty you want "))
+ import random
+ health_potion = 50
+ if b == 1:
+   Potion_health = random.randint(25,50) / 1
+   total_health = Potion_health +  health_potion
+   print(total_health)
+ elif b == 2:
+   Potion_health = random.randint(25,50) / 2
+   total_health = Potion_health +  health_potion
+   print(total_health)
+ elif b == 3:
+   Potion_health = random.randint(25,50) / 3
+   total_health = Potion_health +  health_potion
+   print(total_health)

@@ -1,0 +1,33 @@
+def cinema_tickets():
+  flims = {
+    "Tarzan": [18,9],
+    "Gold Belly": [15,8],
+    "Delhi Belly": [13,7],
+    "Tiger Zinda Hai":[18,7]}
+  while True:
+      choose = input("Choose any Movie which you want to watch :-").strip().title()
+      if choose in flims:
+          age = int(input("What is your age").strip())
+          if age >= flims[choose][0]:
+             t = ("Nice,You are egilible to watch {}")
+             n = t.format(choose)
+             print(n)
+             seats = int(input("how many seats u want:-"))
+             if seats <= flims[choose][1]:
+                 n = ("Cool Your Seat is booked for movie {} and seats {} are booked")
+                 q = choose
+                 o = n.format(q,seats)
+                 print(o)
+             else:
+                 a = ("sorry,we are only left with {}")
+                 b = a.format(flims[choose][1])
+                 print(b)
+          else:
+              c = ("sorry you are not eligible to watch movie as you are below the age of {} ")
+              d = c.format(flims[choose][0])
+              print(d)
+      else:
+         e = ("sorry!! Movie is not availabe as we only have {}")
+         f = e.format(flims) 
+         print(f)
+def cinema_tickets():

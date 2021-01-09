@@ -3,7 +3,7 @@ def cinema_tickets():
     "Tarzan": [18,9],
     "Gold Belly": [15,8],
     "Delhi Belly": [13,7],
-    "Tiger Zinda Hai":[18,7]}
+    "Tiger Hai":[18,7]}
   while True:
       choose = input("Choose any Movie which you want to watch :-").strip().title()
       if choose in flims:
